@@ -1,0 +1,25 @@
+let Router = require('koa-router')
+let blogController = require('../controllers/blog')
+
+let router = new Router( )
+
+router.post('/saveArticle', blogController.saveArticle)
+router.get('/readArticle', blogController.readArticle)
+router.post('/register', blogController.register)
+router.post('/login', blogController.login)
+router.get('/getUserInfo', blogController.getUserInfo)
+router.get('/logout', blogController.logout)
+router.get('/getComment', blogController.getComment)
+router.post('/addComment', blogController.addComment)
+router.post('/updateArticle', blogController.updateArticle)
+router.post('/updateBrowers', blogController.updateBrowers)
+router.get('/query', blogController.query)
+router.get('/deleteBlog', blogController.deleteBlog)
+router.get('/getUsers', blogController.getUsers)
+router.get('/deleteUser', blogController.deleteUser)
+router.get('/deleteComment', blogController.deleteComment)
+router.post('/saveFile', blogController.saveFile)
+router.get('/deleteFile', blogController.deleteFile)
+router.get('/getFile', blogController.getFile)
+
+module.exports = router

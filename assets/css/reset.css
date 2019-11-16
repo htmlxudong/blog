@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+html, body{
+  font-size: 16px;
+  height: 100%;
+  font-family: "Microsoft YaHei";
+}
+ul>li, ol>li{
+  list-style: none;
+}
+input,button{
+  outline: none;
+  border: none;
+}
+.clearfix{
+  *zoom:1;/*开启haslayout*/
+}
+.clearfix:after{
+  content:"";
+  display:block;
+  clear:both;
+}
